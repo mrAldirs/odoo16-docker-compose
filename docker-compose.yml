@@ -1,0 +1,31 @@
+version: "2"
+services:
+  web:
+    image: odoo:16.0
+    container_name: odoo16
+    depends_on:
+      - db
+    ports:
+      - "10000:8069" #Yang kanan port asli dari odoo, dan yang kiri port yang bebas kita ubah untuk container yang kita buat.
+    volumes:
+      - odoo-web-data:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./addons:/mnt/extra-addons
+    restart: always
+
+  db:
+    image: postgres:15
+    container_name: db
+    environment:
+      - POSTGRES_DB=postgres #Nama Databse
+      - POSTGRES_USER=odoo16 #User untuk login ke Databse
+      - POSTGRES_PASSWORD=odoo16 #Password untuk login ke Databse
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data/pgata
+    ports:
+      - "5432:5432" #Yang kanan port asli dari postgres, dan yang kiri port yang bebas kita ubah untuk container yang kita buat.
+    restart: always
+volumes:
+  odoo-web-data:
+  odoo-db-data:
