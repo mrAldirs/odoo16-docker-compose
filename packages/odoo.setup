@@ -1,11 +1,16 @@
-1. **Start Odoo-16.0 with Docker-Compose**:
-   To initiate the installation of Odoo-16.0, execute the following Docker-Compose command in your terminal:
-   docker-compose up -d
+# Odoo 16 Configuration Setup
 
-2. **Restart**:
-   If necessary, you can perform a restart of Odoo using the following command:
-   docker-compose restart
+## PostgreSQL Configuration
+DB_HOST=db
+DB_PORT=5432
+DB_USER=odoo16
+DB_PASSWORD=odoo16
+POSTGRES_DB=postgres
 
-3. **Shutdown**:
-   To gracefully conclude the installation, use the following command to stop and terminate the services:
-   docker-compose down
+## Odoo Configuration
+ODOO_PORT=8069
+ODOO_IMAGE=odoo:16.0
+ODOO_CONTAINER_NAME=odoo16
+ODOO_CONFIG_DIR=./etc/odoo/config
+ODOO_ADDONS_DIR=./mnt/extra-addons
+ODOO_DATA_DIR=./etc/odoo
