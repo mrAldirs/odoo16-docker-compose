@@ -14,7 +14,7 @@ autorun.cmd
 **Run Odoo**:
 
 ``` cmd
-docker-compose up -d
+docker-compose up
 ```
 
 - To run Odoo container in detached mode (be able to close terminal without stopping Odoo):
