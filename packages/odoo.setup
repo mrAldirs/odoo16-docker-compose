@@ -1,0 +1,11 @@
+1. **Start Odoo-16.0 with Docker-Compose**:
+   To initiate the installation of Odoo-16.0, execute the following Docker-Compose command in your terminal:
+   docker-compose up -d
+
+2. **Restart**:
+   If necessary, you can perform a restart of Odoo using the following command:
+   docker-compose restart
+
+3. **Shutdown**:
+   To gracefully conclude the installation, use the following command to stop and terminate the services:
+   docker-compose down

@@ -11,6 +11,7 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
+      # - entrypoint:/entrypoint.sh #Uncomment this line if you want to use entrypoint.sh
     restart: always
 
   db:

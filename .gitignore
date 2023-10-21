@@ -1,0 +1,6 @@
+# build result folder
+postgresql/
+config/addons/
+config/filestore/
+config/sessions/
+config/odoo-server.log

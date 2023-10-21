@@ -1,0 +1,4 @@
+include README.md
+graft odoo
+recursive-exclude * *.py[co]
+recursive-exclude .git *
