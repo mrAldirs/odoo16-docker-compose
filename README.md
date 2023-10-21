@@ -23,7 +23,7 @@ docker-compose up
 docker-compose up -d
 ```
 
-- Open `localhost:8069` to access default port web Odoo 16.0. If you want to start the server with a different port, change **10000** to another value in **docker-compose.yml** inside the parent dir:
+- Open `localhost:10000` to access default port web Odoo 16.0. If you want to start the server with a different port, change **10000** to another value in **docker-compose.yml** inside the parent dir:
 
 ```
 ports:
