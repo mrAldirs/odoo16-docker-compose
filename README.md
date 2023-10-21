@@ -46,7 +46,7 @@ in this default configuration  **directory addons** `/mnt/extra-addons`
 
 ## Odoo configuration & log
 
-* To change Odoo configuration, edit file: **etc/odoo.conf**.
+* To change Odoo configuration, edit file: **config/odoo.conf**.
 * Default database password (**admin_passwd**) is `mr.Aldirs`
 
 ## docker-compose.yml
